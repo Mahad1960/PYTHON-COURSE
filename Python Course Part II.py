@@ -420,3 +420,40 @@ print("TIME SLEEP: This sentence is printed after 3 seconds.")
 t=time.localtime()   # It tells the local time of that city where are you present.
 print("LOCAL TIME:",t)
 print("\n")
+# WARLUS OPERATOR:
+a=True
+print("WARLUS OPERATOR:",a:=False)  # If you write "print(a=False)", this will give error.  
+foods=list()
+while (food:=input("Which color do you like? ")) !="quit":  # This will stop taking input when "quit" will typed.
+  foods.append(food)
+print("WARLUS OPERATOR:",foods)
+print("\n")
+# GENERATORS:
+# You can create a "Generator" using "yield" statement.
+# "Generators" doesn't store values. It generate values on the fly.
+def my_generator():
+  for i in range(1,6):
+    yield i                    # For "Generators", "yield" keyword is used.
+gen=my_generator()
+# 1st Method: 
+print("GENERATOR:",next(gen))  # "next" keyword runs the code until it reaches the next yield.
+print("GENERATOR:",next(gen))  # It will print one value at a time so if you want 5 values you have to write this statement 5 times.
+print("\n")
+# 2nd Method:                  # This method will work like a "for" loop.
+# for i in gen:
+#   print("GENERATOR:",i)
+# FUNCTION CACHING:
+# It is done by "FUNCTOOL Module".
+# It's complete use has been done in other file, you can see it.
+# REGULAR EXPRESSIONS:
+# It is done by "Re Module".
+# It's complete use has been done in other file, you can see it.
+# ASYNC IO:
+# It is done by "Asyncio Module".
+# It's complete use has been done in other file, you can see it.
+# MULTITHREADING:
+# It is done by "Threading Module", "Concurrent Module".
+# It's complete use has been done in other file, you can see it.
+# MULTIPROCESSING:
+# It is done by "Multiprocessing Module".
+# It's complete use has been done in other file, you can see it.
