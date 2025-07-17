@@ -1,4 +1,4 @@
-from PyPDF2 import PdfMerger
+from PyPDF2 import PdfMerger     # "PyPDF2" to install it.
 import os
 merger=PdfMerger()
 files=os.listdir("PDF FOLDER")   # You can also write "." instead of "PDF FOLDER" which means the current directory.
